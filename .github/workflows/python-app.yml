@@ -53,7 +53,7 @@ jobs:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
     - name: Archive test results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4  # Updated from v2 to v4
       with:
         name: test-results
         path: |
