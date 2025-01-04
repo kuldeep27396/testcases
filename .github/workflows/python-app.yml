@@ -48,9 +48,10 @@ jobs:
         pytest src/tests/ -v --cov=src/data_processor --cov-report=xml
 
     - name: Upload coverage reports
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v5
       env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}
+        slug: kuldeep27396/testcases
 
     - name: Archive test results
       uses: actions/upload-artifact@v4  # Updated from v2 to v4
