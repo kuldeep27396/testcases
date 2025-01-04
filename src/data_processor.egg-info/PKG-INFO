@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: data-processor
+Version: 0.1
+Requires-Dist: pyspark>=3.5.0
+Requires-Dist: pytest>=7.4.3
+Requires-Dist: pytest-spark>=0.6.0
+Requires-Dist: chispa>=0.9.2
